@@ -1,0 +1,32 @@
+.track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #0b1930;
+}
+
+.track.playing {
+    background-color: #2b303e;
+}
+
+.track img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.track .track-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.track .title {
+    font-weight: bold;
+}
+
+.track button {
+    margin-left: auto;
+}

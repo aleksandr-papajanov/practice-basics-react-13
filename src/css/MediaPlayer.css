@@ -1,0 +1,37 @@
+.media-player {
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+    height: 50rem;
+    background-color: #19263c;
+    color: #bfccd5;
+}
+
+.media-player header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to top, #2b303e, #48485c);
+    padding: 1rem;
+}
+
+.media-player header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.media-player .content {
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .media-player {
+        width: 100%;
+        height: 100%;
+    }
+
+    .media-player .content {
+        flex-direction: column;
+    }
+}
